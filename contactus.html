@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#food">Category</a></li>
+            <li><a href="#food-menu">Menu</a></li>
+            <li><a href="#testimonials">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h1 class="logo">Flavour Fusion</h1>
+    </div>
+</nav>
+<style>
+  .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #e22a2a;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+</style>
+</body>
+<body>
+<div class="contact-container">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
+        <h2>Contact us</h2>
+        <hr>
+      </div>
+      <input type="hidden" name="access_key" value="65b8d86f-a4e7-484f-bc11-97cf2a6a4161">
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+      <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+      <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+    </form>
+    <div class="contact-right">
+        <img src="/assets/right_img.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
+
